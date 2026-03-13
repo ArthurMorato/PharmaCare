@@ -196,6 +196,8 @@ Forneça:
 - Testes com Testcontainers
 ```
 
++++++++++++++++++++++++++++++++++++++++++++++++++ paramos aquii!!!!!!!!!!!
+
 ---
 
 ## **FASE 4: INFRAESTRUTURA E ADAPTERS**
