@@ -1,0 +1,59 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    
+    # Configuração de conversão de dados
+    conversion-service:
+      enabled: true
+    
+    # Tratamento de exceções
+    throw-exception-if-no-handler-found: true
+  
+  # Configuração de recursos estáticos
+  resources:
+    add-mappings: false
+  
+  # Configuração de mensagens de validação
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+
+# Configuração do Swagger/OpenAPI
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    display-request-duration: true
+    doc-expansion: none
+    default-model-expand-depth: 2
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+
+# Configuração de segurança para endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+      base-path: /management
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+
+# Logging para troubleshooting
+logging:
+  level:
+    com.pharmacare.infrastructure.adapter.input.rest: DEBUG
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.hibernate.validator: WARN

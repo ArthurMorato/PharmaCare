@@ -1,0 +1,5 @@
+Estou te passando os arquivos do meu projeto que precisam apenas serem padronizados. Faça a conexão para essas classes se conversarem. Me de APENAS o código para o que for preciso mudar. Não me de código de outras classes.
+.file /var/home/arthurmorato/Documentos/progs/PharmaCare/backend/domain-core/src/main/java/com/pharmacare/domain/core/products/aggregates/Product.java
+/var/home/arthurmorato/Documentos/progs/PharmaCare/backend/infrastructure-persistence/src/test/java/com/pharmacare/infrastructure/persistence/mongodb/adapter/ProductMongoRepositoryAdapterIT.java
+/var/home/arthurmorato/Documentos/progs/PharmaCare/backend/domain-core/src/main/java/com/pharmacare/domain/core/common/ValueObject.java
+/var/home/arthurmorato/Documentos/progs/PharmaCare/backend/infrastructure-persistence/src/main/java/com/pharmacare/infrastructure/persistence/mongodb/adapter/ProductMongoRepositoryAdapter.java
